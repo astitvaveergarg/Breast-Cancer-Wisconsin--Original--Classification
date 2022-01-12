@@ -18,4 +18,5 @@ Attribute Information:
 8. Bland Chromatin: 1 - 10
 9. Normal Nucleoli: 1 - 10
 10. Mitoses: 1 - 10
-11. Class: (2 for benign, 4 for malignant)
+11. Class: 
+(2 for benign, 4 for malignant)
