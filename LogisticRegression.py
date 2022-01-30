@@ -16,7 +16,6 @@ Mitoses= np.array(dataset['M'].values).reshape(-1,1)
 Class= np.array(dataset['C'].values)
 
 Features=np.concatenate((ClumpThickness, UniformityOfCellSize, UniformityOfCellShape, MarginalAdhesion, SingleEpithelialCellSize, BareNuclei, BlandChromatin, NormalNucleoli, Mitoses),axis=1)
-print(Features)
 
 model=LogisticRegression()
 model.fit(Features, Class)
