@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block Content %}
+<h2> Prediction System </h2>
+<form action="" method="POST">
+    <p>
+        {{form.PatientCT.label}}<br>
+        {{form.PatientCT(size=30)}}
+    </p>
+    <p>
+        {{form.PatientUCSize.label}}<br>
+        {{form.PatientUCSize(size=30)}}
+    </p>
+    <p>
+        {{form.PatientUCShape.label}}<br>
+        {{form.PatientUCShape(size=30)}}
+    </p>
+    <p>
+        {{form.PatientMA.label}}<br>
+        {{form.PatientMA(size=30)}}
+    </p>
+    <p>
+        {{form.PatientSECS.label}}<br>
+        {{form.PatientSECS(size=30)}}
+    </p>
+    <p>
+        {{form.PatientBN.label}}<br>
+        {{form.PatientBN(size=30)}}
+    </p>
+    <p>
+        {{form.PatientBC.label}}<br>
+        {{form.PatientBC(size=30)}}
+    </p>
+    <p>
+        {{form.PatientNN.label}}<br>
+        {{form.PatientNN(size=30)}}
+    </p>
+    <p>
+        {{form.PatientMitosis.label}}<br>
+        {{form.PatientMitosis(size=30)}}
+    </p>
+    <p>
+        {{form.Submit()}}
+    </p>
+
+</form>
+{% endblock %}

@@ -33,7 +33,7 @@ PatientBC=int(input("Enter The Bland Chromatin: "))
 PatientNN=int(input("Enter The Normal Nucleoli: "))
 PatientMitosis=int(input("Enter The Mitosis: "))
 
-Predict=model.predict([[PatientCT, PatientUCSize, PatientUCShape, PatientMA, PatientSECS, PatientBN, PatientBN, PatientNN, PatientMitosis]])
+Predict=model.predict([[PatientCT, PatientUCSize, PatientUCShape, PatientMA, PatientSECS, PatientBN, PatientBC, PatientNN, PatientMitosis]])
 
 if (Predict==2):
     print("Benign")
